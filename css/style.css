@@ -1,0 +1,1201 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    z-index: -1;
+    cursor: crosshair;
+    background-color: white;
+}
+
+.indexbody {
+    overflow: hidden;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.parallax__item {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: -10%;
+}
+
+
+.background {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg");
+    background-size: cover;
+}
+
+.indexlogo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 15% auto 0 auto;
+    z-index: 0;
+}
+
+.nav_links {
+    float: left;
+    margin: 5% auto 0 auto;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+    padding-left: 40px;
+}
+
+.nav_links li {
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.nav_links a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 40px;
+    padding: 20px;
+    transition: background-color 1s ease-in-out;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.nav_links a:hover {
+    cursor: crosshair;
+    background-color: #354B4F;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+
+
+/* ABOUT PAGE */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white
+}
+
+header .right1 {
+    float: right;
+    margin: 10px 10px 10px 0;
+}
+
+header .right2 {
+    float: right;
+    margin: 9px 10px 10px 0;
+}
+
+header .fa-facebook,
+header .fa-instagram {
+    color: #354B4F;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+header .fa-facebook:hover,
+header .fa-instagram:hover {
+    background-color: #354B4F;
+    color: white;
+}
+
+header img {
+    display: inline-block;
+    float: right;
+}
+
+header .navbar {
+    display: none;
+}
+
+main {
+    width: 70%;
+    margin: 60px auto 10px;
+    z-index: -1;
+    padding-top: 100px;
+}
+
+.decorationlefttoright {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 1px;
+    top: 50px;
+    left: 51px;
+    background: linear-gradient(to right, #354b4f 0%, #ffffff 100%);
+}
+
+.decorationlefttobottom {
+    width: 1px;
+    height: 30px;
+    top: 50px;
+    left: 50px;
+    background-color: #354b4f;
+}
+
+.decorationbottom {
+    width: 1px;
+    height: 50px;
+    top: 525px;
+    left: 50px;
+    background: linear-gradient(to bottom, #354b4f 0%, #ffffff 100%);
+}
+
+.decorationbottom,
+.decorationlefttobottom {
+    z-index: 999;
+    position: fixed;
+}
+
+.fixedul {
+    display: inline-block;
+    position: fixed;
+    top: 320px;
+    left: -192px;
+    margin: 0;
+    list-style-type: none;
+    transform: rotate(270deg);
+    z-index: 999;
+}
+
+.fixedul li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.fixedul li a {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 12px;
+    color: #354B4F;
+    padding: 3px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color 1ms ease-in-out;
+    transition: color 1s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.fixedul li a:hover {
+    color: white;
+    background-color: #354B4F;
+}
+
+.decorationpoints1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.decorationpoints2 {
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.decorationpoints3 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.decorationpoints .fa {
+    font-size: 14px;
+    color: #354B4F;
+}
+
+.decorationpoints {
+    z-index: -1;
+}
+
+.containerabout .designerimg {
+    float: left;
+    width: 45%;
+}
+
+.containerabout .designer .interiordesigner {
+    float: right;
+}
+
+.containerabout .designer .interiordesigner p {
+    display: inline-block;
+    background-color: #354B4F;
+    padding: 3px 10px;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.containerabout .designer .interiordesigner h1 {
+    font-family: 'Istok Web', sans-serif;
+    display: inline-block;
+    word-wrap: break-word;
+    line-height: 30px;
+    vertical-align: text-top;
+    text-align: center;
+    width: 24px;
+    margin-left: 10px;
+    color: #354B4F;
+}
+
+.containerabout .designer .aboutdesigner {
+    float: left;
+    width: 45%;
+    margin: 3% 0 0 5%;
+}
+
+.containerabout .designer .aboutdesigner p {
+    font-family: 'Istok Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+.missions {
+    width: 100%;
+    background-color: #354B4F;
+    border-radius: 70px;
+    -webkit-border-radius: 95px;
+    -moz-border-radius: 95px;
+    -ms-border-radius: 95px;
+    -o-border-radius: 95px;
+    color: white;
+    padding: 35px 50px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.missions h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.missions .missionsline {
+    width: 40%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.missions p {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.nextpage {
+    float: right;
+    padding: 20px;
+}
+
+.nextpage a {
+    color: #354B4F;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+
+/*CONTACT PAGE*/
+
+.maincontact {
+    padding-top: 300px;
+}
+
+.contactlogo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 4.5% auto 0 auto;
+    z-index: -1;
+}
+
+.leftcontact {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.rightcontact {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.leftcontact .titlecontact {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.rightcontact .titlecontact {
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.leftcontact .infocontact {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.leftcontact .infocontact span .fa {
+    padding-left: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #354B4F;
+}
+
+.rightcontact form input {
+    width: 90%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transition: width 1s ease-in-out;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+.rightcontact form input:focus {
+    width: 100%;
+}
+
+.rightcontact form textarea {
+    width: 90%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transition: width 1s ease-in-out;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+.rightcontact form textarea:focus {
+    width: 100%;
+}
+
+.rightcontact form input[type=submit] {
+    width: 100px;
+    background-color: white;
+    text-align: left;
+}
+
+.rightcontact form input[type=submit]:hover {
+    width: 150px;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+}
+
+.appointment {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.appointment p {
+    padding: 25px 0 5px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.appointment input,
+.appointment textarea {
+    width: 95.5%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transition: width 1s ease-in-out;
+    font-size: 18px;
+    font-family: 'Istok Web', sans-serif;
+    letter-spacing: 2px;
+}
+
+.appointment input:focus,
+.appointment textarea:focus {
+    width: 100%;
+}
+
+.appointment input[type=submit] {
+    background-color: white;
+    text-align: left;
+}
+
+.appointment input[type=submit]:hover {
+    width: 100%;
+}
+
+
+
+/*PROJECTS PAGE*/
+
+.projectsmain > h1 {
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    transition: margin-left 1s ease-in-out;
+}
+
+.projectsmain > h1:hover {
+    margin-left: 37px;
+
+}
+
+.deco_title {
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 140px;
+    left: 39px;
+    background-color: #354B4F;
+}
+
+.posttype {
+    margin: 100px 0 100px 0
+}
+
+.posttype h3 {
+    text-transform: uppercase;
+}
+
+.posttype1 {
+    width: 100%;
+    border-right: 2px solid #354B4F;
+}
+
+.posttype1 > h3 {
+    font-family: 'Istok Web', sans-serif;
+    display: inline-block;
+    word-wrap: break-word;
+    line-height: 20px;
+    vertical-align: text-top;
+    text-align: center;
+    width: 14px;
+    margin-right: 10px;
+    color: #354B4F;
+    transition: color 1s ease-in-out;
+}
+
+.posttype1 .p,
+.posttype2 .p {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    writing-mode: vertical-rl;
+    text-align: right;
+    letter-spacing: 2px;
+    float: right;
+    height: 300px;
+    padding-right: 5%;
+    width: 20%;
+}
+
+.posttype1 .img {
+    float: right;
+    width: 30%;
+}
+
+.posttype1 .descriptype1 {
+    float: left;
+    width: 50%;
+    padding: 50px 50px 0 0;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.posttype2 {
+    width: 100%;
+    border-left: 2px dotted #354B4F;
+}
+
+.posttype2 .p {
+    float: left;
+}
+
+.posttype1 .p {
+    float: right;
+}
+
+.posttype2 .img {
+    float: left;
+    width: 30%;
+}
+
+.posttype2 > h3 {
+    float: left;
+    font-family: 'Istok Web', sans-serif;
+    display: inline-block;
+    word-wrap: break-word;
+    line-height: 20px;
+    vertical-align: text-top;
+    text-align: center;
+    width: 14px;
+    margin-left: 15px;
+    color: #354B4F;
+    transition: color 1s ease-in-out;
+}
+
+.posttype2 .descriptype2 {
+    width: 50%;
+    display: inline-block;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: right;
+    padding: 50px 0 0 50px;
+}
+
+.posttype1 h3:hover,
+.posttype2 h3:hover {
+    color: #59C3C3;
+}
+
+.p {
+    transform: rotate(180deg);
+}
+
+.post3 .img {
+    width: 30%;
+}
+
+.post3 h3 {
+    float: right;
+    padding-right: 15px;
+}
+
+.post3 h3:first-of-type {
+    padding-right: 30px;
+}
+
+.post3 .descriptype1 {
+    width: 50%;
+}
+
+.post3 {
+    border-right: double #354B4F;
+}
+
+.post4 h3 {
+    float: right;
+}
+
+.post4 .descriptype2 {
+    width: 50%;
+    padding: 50px 0 0 50px;
+}
+
+.post4 .img {
+    width: 30%;
+}
+
+.post4 .p {
+    width: 20%;
+    padding-right: 5%;
+}
+
+.post5 h3 {
+    padding-right: 10px;
+}
+
+.post5 .descriptype1 {
+    width: 50%;
+    padding: 50px 50px 0 0;
+}
+
+.post5 .img {
+    width: 30%;
+}
+
+.post5 .p {
+    width: 20%;
+    padding-right: 5%;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 1920px) {
+    .decorationlefttoright {
+        z-index: 999;
+        width: 100%;
+        height: 1px;
+        position: fixed;
+        top: 50px;
+        left: 51px;
+    }
+
+    .decorationlefttobottom {
+        z-index: 999;
+        width: 1px;
+        height: 45px;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+    }
+
+    .decorationbottom {
+        z-index: 999;
+        width: 1px;
+        height: 60px;
+        position: fixed;
+        top: 630px;
+        left: 50px;
+    }
+
+    .fixedul {
+        display: inline-block;
+        position: fixed;
+        top: 380px;
+        left: -229px;
+        margin: 0;
+        list-style-type: none;
+        transform: rotate(270deg);
+        z-index: 999;
+    }
+
+    .fixedul li a {
+        font-size: 16px;
+    }
+
+    .decorationpoints .fa {
+        font-size: 16px;
+    }
+
+    .containerabout .designer .interiordesigner p {
+        font-size: 18px;
+    }
+
+    .containerabout .designer .designerimg {
+        width: 40%;
+    }
+
+    .containerabout .designer .aboutdesigner {
+        width: 55%;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+
+    .containerabout .designer .aboutdesigner p {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .missions p,
+    .leftcontact .infocontact {
+        font-size: 16px;
+    }
+
+    .posttype .descriptype1,
+    .posttype .descriptype2 {
+        font-size: 20px;
+    }
+
+    .posttype .p {
+        font-size: 18px;
+        height: 500px;
+    }
+
+    .posttype h3 {
+        font-size: 2em;
+        line-height: 30px;
+        width: 18px;
+    }
+
+    main > h1 {
+        font-size: 2.5em;
+    }
+
+    .deco_title {
+        top: 150px;
+        width: 300px;
+    }
+
+    .nextpage .fa-angle-right,
+    .nextpage .fa-angle-double-right {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+    .containerabout .designer .aboutdesigner {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .posttype h3 {
+        font-size: 1em;
+        width: 11px;
+    }
+
+    .posttype .descriptype1,
+    .posttype .descriptype2 {
+        font-size: 12px;
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .posttype .p {
+        font-size: 10px;
+        height: 270px;
+    }
+
+    .decorationlefttoright {
+        z-index: 999;
+        width: 100%;
+        height: 1px;
+        position: fixed;
+        top: 50px;
+        left: 51px;
+    }
+
+    .decorationlefttobottom {
+        z-index: 999;
+        width: 1px;
+        height: 45px;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+    }
+
+    .decorationbottom {
+        z-index: 999;
+        width: 1px;
+        height: 60px;
+        position: fixed;
+        top: 530px;
+        left: 50px;
+    }
+
+    .fixedul {
+        display: inline-block;
+        position: fixed;
+        top: 332px;
+        left: -191px;
+        margin: 0;
+        list-style-type: none;
+        transform: rotate(270deg);
+        z-index: 999;
+    }
+
+    .fixedul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 800px) {
+    .containerabout .designer .aboutdesigner {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .posttype1 .p,
+    .posttype2 .p {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        width: 100%;
+        padding: 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .posttype h3 {
+        word-wrap: normal;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .posttype h3:first-of-type {
+        padding-right: 0;
+    }
+
+    .posttype .img {
+        float: none;
+        width: 100%;
+        padding: 2% 20%;
+    }
+
+    .posttype1 .descriptype1,
+    .posttype2 .descriptype2 {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+
+
+    header .navbar {
+        display: inline-block;
+    }
+
+    nav {
+        display: inline-block;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    nav ul {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #354B4F;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        background-color: #354B4F;
+    }
+
+    nav ul li a {
+        color: #000;
+        display: block;
+        font-size: 14px;
+        transition: 0.3s linear;
+        background-color: #354B4F;
+        transition: background-color 1s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        background-color: #59C3C3;
+    }
+
+    .decorationlefttoright,
+    .decorationlefttobottom,
+    .decorationbottom,
+    .fixedul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 799px) and (min-width: 600px) {
+    .nav_links li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .nav_links {
+        padding-left: 0;
+    }
+
+    .containerabout .designer .interiordesigner p {
+        display: none;
+    }
+
+    .containerabout .designer .aboutdesigner {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .missions .missionsline {
+        width: 80%;
+    }
+
+    .rightcontact,
+    .leftcontact {
+        width: 100%;
+    }
+
+    .leftcontact {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .rightcontact .titlecontact {
+        text-align: center;
+    }
+
+    .posttype1 .p,
+    .posttype2 .p {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        width: 100%;
+        padding: 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .posttype h3 {
+        word-wrap: normal;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .posttype h3:first-of-type {
+        padding-right: 0;
+    }
+
+    .posttype .img {
+        float: none;
+        width: 100%;
+        padding: 2% 10%;
+    }
+
+    .posttype1 .descriptype1,
+    .posttype2 .descriptype2 {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    header .navbar {
+        display: inline-block;
+    }
+
+    nav {
+        display: inline-block;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    nav ul {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #354B4F;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        background-color: #354B4F;
+    }
+
+    nav ul li a {
+        color: #000;
+        display: block;
+        font-size: 14px;
+        transition: 0.3s linear;
+        background-color: #354B4F;
+    }
+
+    .decorationlefttoright,
+    .decorationlefttobottom,
+    .decorationbottom,
+    .fixedul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .nav_links li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .nav_links {
+        padding-left: 0;
+    }
+
+    .containerabout .designer .interiordesigner p {
+        display: none;
+    }
+
+    .containerabout .designer .interiordesigner h1 {
+        font-size: 16px;
+        word-wrap: normal;
+        vertical-align: initial;
+        display: block;
+        width: auto;
+    }
+
+    .containerabout .designer .aboutdesigner {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .containerabout .designer .aboutdesigner {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .missions .missionsline {
+        width: 80%;
+    }
+
+    .rightcontact,
+    .leftcontact {
+        width: 100%;
+    }
+
+    .leftcontact {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .rightcontact .titlecontact {
+        text-align: center;
+    }
+
+    .posttype1 .p,
+    .posttype2 .p {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        width: 100%;
+        padding: 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .posttype h3 {
+        word-wrap: normal;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .posttype h3:first-of-type {
+        padding-right: 0;
+    }
+
+    .posttype .img {
+        float: none;
+        width: 100%;
+        padding: 2% 5%;
+    }
+
+    .posttype1 .descriptype1,
+    .posttype2 .descriptype2 {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    header .navbar {
+        display: inline-block;
+    }
+
+    nav {
+        display: inline-block;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    nav ul {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #354B4F;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        background-color: #354B4F;
+    }
+
+    nav ul li a {
+        color: #000;
+        display: block;
+        font-size: 14px;
+        transition: 0.3s linear;
+        background-color: #354B4F;
+    }
+
+    .decorationlefttoright,
+    .decorationlefttobottom,
+    .decorationbottom,
+    .fixedul {
+        display: none;
+    }
+}

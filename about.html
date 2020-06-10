@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.es-drawermenu.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-left">
+                <svg version="1.1" class="hamburger drawer-toggle" id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 302 212.9" style="enable-background:new 0 0 302 212.9;" xml:space="preserve">
+              <g><rect width="302" height="26.3" /></g>
+              <g><rect y="93.3" width="302" height="26.3"/></g>
+              <g><rect y="186.7" width="302" height="26.3"/></g>
+            </svg>
+            </div>
+            <div class="menu-right"></div>
+            <nav class="drawermenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.php">Contact</a> </li>
+                </ul>
+            </nav>
+            <div class="drawermenu-overlay"></div>
+        </div>
+        <div class="right1">
+            <a href="#" class="icons"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="right2"><a href="index.html"><img src="img/logoheader.png"></a></div>
+        <div class="clearfix"></div>
+    </header>
+    <div class="decorationlefttoright"></div>
+    <div class="decorationlefttobottom"></div>
+    <div class="decorationbottom"></div>
+    <ul class="fixedul">
+        <li><a href="contact.php">C o n t a c t</a></li>
+        <li><a href="projects.html">P r o j e c t s</a></li>
+        <li><a href="about.html">A b o u t</a></li>
+        <li><a href="index.html">H o m e</a></li>
+    </ul>
+    <main>
+        <div class="decorationpoints decorationpoints1"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+        <div class="decorationpoints decorationpoints2"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+        <div class="decorationpoints decorationpoints3"><i class="fa fa-circle" aria-hidden="true"></i></div>
+
+        <div class="containerabout">
+            <div class="missions">
+                <h2>HISTORY</h2>
+                <div class="missionsline"></div>
+                <p>Cat's Design is a company focused on interior and exterior design as well as architecture. It was founded by me, Cathryn Maters, in 2016. The name comes from my love and weakness for cats, but also my name.</p>
+            </div>
+            <div class="missions">
+                <h2>MY DESIGN PROCESS</h2>
+                <div class="missionsline"></div>
+                <p>I create a warm and cozy environment for each and every one of my customers and I invite them all over for a coffee or tea - on the house - to discuss any ideas they may have and make it become their reality. I use the newest programs and techniques to ensure the best designs you have ever seen while keeping in touch with my clients to discuss any changes I might have to make to stay in budget or the safety regulations.</p>
+            </div>
+            <div class="missions">
+                <h2>MY MISSION</h2>
+                <div class="missionsline"></div>
+                <p>I started this project with hearts full of love for what I do and I plan on doing the best work for as long as we can. I want to create the best, most modern and up to date designs while putting quality and affordability at the top of my priority list. So be sure that I will always work having you and your interests in mind.</p>
+            </div>
+            <div class="designer">
+                <div class="designerimg"><img src="img/portrait.jpg"></div>
+                <div class="interiordesigner">
+                    <p>INTERIOR DESIGNER</p>
+                    <h1>C a t h r y n</h1>
+                    <h1>M a t e r s</h1>
+                </div>
+                <div class="aboutdesigner">
+                    <p> Modern design refers to the specific time period between the early to mid-twentieth century. This was the peak of art and design informed by Scandinavian and German Bauhaus design, creating a distinct style focused on simple form and function.
+                        <br><br>Contemporary design doesn't refer to a specific period of time, it's constantly changing to reflect the popular styles of present day design. It borrows qualities from modernism, minimalism, and other global styles, without hyper-focusing on any one in particular.
+                        <br><br>The main differences between modern and contemporary design? Contemporary is by definition what's going on in design at this very moment in time, which makes it more fluid and hard to pin down. Modern design, on the other hand, has a distinguishable aesthetic that emphasizes crisp lines, warm neutrals, and balance.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.es-drawermenu.js"></script>
+    <script>
+        $('.drawermenu').drawermenu({
+            // change the speed of the drawer
+            speed: 100,
+            // If position: right, draw from the right
+            position: 'left'
+        });
+
+        $('nav li').hover(
+            function() {
+                $('ul', this).stop().slideDown(200);
+            },
+            function() {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+
+    </script>
+</body>
+
+</html>
